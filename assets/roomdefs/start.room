@@ -1,0 +1,24 @@
+--  The starting room
+return {
+  id = "start",
+  name = "the Starting Room",
+  description = "",
+  exits = {
+    n = false,
+    s = false,
+    e = false,
+    w = false,
+  },
+  items = {
+  "lighter",
+  },
+  chanceItems = {
+  "bones",
+  },
+  updatefunc = function (thisRoom)
+    if thisRoom.items.lighter then return end
+    if thisRoom.exits.n == true then return end
+    thisRoom.exits.n = true
+    print("\nAn exit appeared!")
+    end,
+}

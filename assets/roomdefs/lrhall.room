@@ -1,0 +1,15 @@
+return {
+  id = "lrHall",
+  name = "a hallway",
+  description = "It is musty and damp.",
+  exits = {
+    n = false,
+    s = false,
+    e = true,
+    w = true,
+  },
+  items = {
+  },
+  chanceItems = {
+  },
+}

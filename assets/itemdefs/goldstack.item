@@ -1,0 +1,8 @@
+return {
+  id = "goldstack",
+  name = "Stack of Gold",
+  friendlyNames = { "gold stack", "goldstack", "stack of gold", "gold pile", },
+  description = "A pile of gold coins.  Glitters in the light.",
+  itemType = "loot",
+  canTake = true,
+}

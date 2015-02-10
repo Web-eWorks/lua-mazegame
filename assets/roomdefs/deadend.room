@@ -1,0 +1,17 @@
+return {
+  id = "deadend",
+  name = "a dead end",
+  description = "A shuttered window sits at the end of the hall.\nThere is nowhere to go but back the way you came.",
+  exits = {
+    n = false,
+    s = true,
+    e = false,
+    w = false,
+  },
+  items = {
+  },
+  chanceItems = {
+    "bones",
+    "gold",
+  },
+}

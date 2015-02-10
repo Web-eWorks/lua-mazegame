@@ -1,0 +1,15 @@
+return {
+  id = "",
+  name = "",
+  description = "",
+  exits = {
+    n = false,
+    s = false,
+    e = false,
+    w = false,
+  },
+  items = {
+  },
+  chanceItems = {
+  },
+}

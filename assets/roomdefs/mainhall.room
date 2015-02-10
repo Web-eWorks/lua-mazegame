@@ -1,0 +1,18 @@
+return {
+  id = "lhall",
+  name = "a Large Hall",
+  description = "It is large and drafty.  Old tapestries hang on the walls.",
+  exits = {
+    n = true,
+    s = true,
+    e = true,
+    w = true,
+  },
+  items = {
+  },
+  chanceItems = {
+    "bone",
+    "bones",
+    "gold",
+  },
+}

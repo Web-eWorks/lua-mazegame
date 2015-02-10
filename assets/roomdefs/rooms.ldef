@@ -1,0 +1,9 @@
+--  A list of rooms to load.
+return {
+  "lrhall.room",
+  "tbhall.room",
+  "mainhall.room",
+  "treasure.room",
+  "deadend.room",
+  "prisoncell.room",
+}

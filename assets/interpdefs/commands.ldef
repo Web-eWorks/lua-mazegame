@@ -1,0 +1,14 @@
+--  A list of command definition files to load
+return {
+  help = "help",
+  wait = "wait",
+  examine = "examine.idef",
+  take = "take.idef",
+  drop = "drop",
+  inventory = "inv.idef",
+  exit = "exit.idef",
+  move = "move.idef",
+  directions = "directions.idef",
+  interact = "interact.idef",
+  use = "use",
+}

@@ -1,0 +1,8 @@
+return {
+  id = "bones",
+  name = "Pile of Bones",
+  friendlyNames = { "bones", "bone pile", "pile of bones", },
+  description = "A pile of bones.  Nasty.",
+  itemType = "junk",
+  canTake = true,
+}

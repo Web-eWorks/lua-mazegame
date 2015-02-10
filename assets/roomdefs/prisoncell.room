@@ -1,0 +1,17 @@
+return {
+  id = "pcell1",
+  name = "a Prison Cell",
+  description = "It is cold, dark, and damp.",
+  exits = {
+    n = false,
+    s = false,
+    e = false,
+    w = true,
+  },
+  items = {
+  },
+  chanceItems = {
+    "bones",
+    "bone",
+  },
+}

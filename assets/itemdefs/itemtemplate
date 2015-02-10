@@ -1,0 +1,8 @@
+return {
+  id = "",
+  name = "",
+  friendlyNames = {  },
+  description = "",
+  itemType = "",
+  canTake = false,
+}

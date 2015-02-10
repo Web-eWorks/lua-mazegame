@@ -1,0 +1,9 @@
+--  The quintessential bronzed lighter.
+return {
+  id = "lighter",
+  name = "Bronze Lighter",
+  friendlyNames = { "lighter", "bronze lighter" },
+  description = "A bronzed lighter, half full with a glowing substance.",
+  itemType = "quest",
+  canTake = true,
+}

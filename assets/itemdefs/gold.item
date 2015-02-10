@@ -1,0 +1,8 @@
+return {
+  id = "gold",
+  name = "Gold Piece",
+  friendlyNames = { "gold", "gold piece", "piece of gold" },
+  description = "A piece of gold.  Shiny!",
+  itemType = "loot",
+  canTake = true,
+}

@@ -1,0 +1,15 @@
+return {
+  id = "udHall",
+  name = "a hallway",
+  description = "It is dry, but rather unpleasant smelling.",
+  exits = {
+    n = true,
+    s = true,
+    e = false,
+    w = false,
+  },
+  items = {
+  },
+  chanceItems = {
+  },
+}

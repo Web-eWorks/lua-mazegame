@@ -1,0 +1,38 @@
+return {
+  id = "treasureroom",
+  name = "the Treasure Room",
+  description = "It is filled with gold.  The glimmer of precious metals stretches as far as the eye can see.",
+  exits = {
+    n = false,
+    s = false,
+    e = true,
+    w = false,
+  },
+  items = {
+    "goldstack",
+  },
+  chanceItems = {
+    "gold",
+    "bone",
+    "bones",
+  },
+  enterfunc = function (thisRoom)
+    if player.checkItemInBag("gold") and player.checkItemInBag("goldstack") and player.checkItemInBag("bone") and not player.checkItemInBag("bones") then
+      clear()
+      print("You have won the game!")
+      game.quit()
+      print("\nPress Enter to close this message.")
+      io.read()
+      return
+    end
+    if player.checkItemInBag("bones") then
+      clear()
+      print("You carry the bones of an ancient evil.  You die.")
+      game.quit()
+      print("\nPress Enter to close this message")
+      io.read()
+      return
+    end
+    print("\nYou have found the Treasure Room!\n")
+  end,
+}

@@ -1,0 +1,8 @@
+return {
+  id = "bone",
+  name = "Single Bone",
+  friendlyNames = { "bone", "single bone" },
+  description = "A single bone.  I can't tell if it's an arm bone or a leg bone.",
+  itemType = "junk",
+  canTake = true,
+}
