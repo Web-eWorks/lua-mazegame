@@ -1,0 +1,8 @@
+return {
+  id = "mutton",
+  name = "Leg of Mutton",
+  friendlyNames = { "leg of mutton", "mutton leg", "mutton", "piece of mutton", },
+  description = "A leg of mutton.  Suprisingly still edible.",
+  itemType = "food",
+  canTake = true,
+}

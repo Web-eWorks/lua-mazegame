@@ -1,0 +1,18 @@
+return {
+  id = "feastinghall",
+  name = "the Feasting Hall",
+  description = "It is filled with tables and chairs.  The roof beams are blackened with smoke.",
+  exits = {
+    n = true,
+    s = false,
+    e = false,
+    w = false,
+  },
+  items = {
+    "bone",
+  },
+  chanceItems = {
+    "mutton",
+    "gold",
+  },
+}

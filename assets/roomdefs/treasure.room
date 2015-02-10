@@ -17,7 +17,7 @@ return {
     "bones",
   },
   enterfunc = function (thisRoom)
-    if player.checkItemInBag("gold") and player.checkItemInBag("goldstack") and player.checkItemInBag("bone") and not player.checkItemInBag("bones") then
+    if player.checkItemInBag("gold") and player.checkItemInBag("goldstack") and player.checkItemInBag("bone") and player.checkItemInBag("mutton") and not player.checkItemInBag("bones") then
       clear()
       print("You have won the game!")
       game.quit()

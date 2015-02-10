@@ -6,4 +6,5 @@ return {
   "treasure.room",
   "deadend.room",
   "prisoncell.room",
+  "feasthall.room",
 }
