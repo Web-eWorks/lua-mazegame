@@ -113,6 +113,7 @@ function interpreter.resolveInput ( sInput )
     return
   end
   
+  --  Also move to another room.
   if interpreter.resolveCommand(words[1], interpreter.def.directions) then
     if not words[2] then
       interpreter.resolveMovement(words[1])
@@ -120,7 +121,7 @@ function interpreter.resolveInput ( sInput )
     end
   end
   
-  --  Doesn't match up to anything,
+  --  Doesn't match up to anything.
   print("I did not understand that command.")
 end
 

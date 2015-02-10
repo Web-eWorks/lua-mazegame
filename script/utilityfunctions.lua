@@ -1,5 +1,4 @@
---  Implement global utiity functions
---  Note:  These functions should never access anything other than standard libraries and the functions defined herein.
+--  Implement static global utiity functions
 
 function write ( sText )
   io.write(sText)
@@ -9,12 +8,14 @@ function clear ( )
   if os.getenv("TERM") then os.execute("clear") end
 end
 
+--  Load a table from a file
 function table.load ( sPath )
   local func,err = loadfile(tostring(sPath))
   if err then return nil end
   return func()
 end
 
+--  Copy a table.
 function deepcopy (orig)
     local orig_type = type(orig)
     local copy

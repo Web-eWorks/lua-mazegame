@@ -1,4 +1,4 @@
---  Static interpreter functions for dealing with items
+--  Interpreter functions for dealing with items
 
 --  Get an item ID from user input
 function interpreter.getItemIDByFriendlyName ( sName )
@@ -20,7 +20,7 @@ function interpreter.getItemIDByFriendlyName ( sName )
   return itemID
 end
 
---  Wrapper for getItemIDByFriendlyName().
+--  Wrapper for getItemIDByFriendlyName().  Gets it from a command.
 function interpreter.getItemIDByCommand ( tCommand )
   local itemID = nil
   

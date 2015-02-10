@@ -15,8 +15,6 @@ dofile("script/player.lua")
 --  Register the interpreter
 dofile("script/interpreter.lua")
 
-----
-
 --  One-time initialization at the start of the game.
 function start()
   game.init()
@@ -26,7 +24,7 @@ end
 
 --  The main loop - returns 0 to continue, 1 to terminate.
 function main ()
-  --  Update everything.  If we called game.quit last turn then quit.
+  --  Update function.  Returns true if game.quit was called.
   if game.main() then return 1 end
   
   write("> ")
@@ -34,7 +32,7 @@ function main ()
   --  Catch commands from the player
   local input = io.read()
   
-  --  Handles dispatching gameplay functions and interpreting player commands
+  --  Interpret the player's commands
   interpreter.run(input)
   
   return 0

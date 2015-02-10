@@ -1,5 +1,6 @@
 --  Interpreter functions for dealing with movement
 
+--  Figure out which way we're going
 function interpreter.resolveMovement( direction ) 
   local cantGo = function () print("There isn't an exit that way.") end
   

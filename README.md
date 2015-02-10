@@ -19,7 +19,7 @@ Then, simply navigate to the Maze Game folder and run `lua MazeGame.lua` in the 
 Enjoy!
 
 ## Known Issues
-- Clearing the screen might not work properly on Windows.
+- Clearing the screen might not work properly(or at all) on Windows.
 - Resizing the terminal window tends to mess things up.
 
 ## License

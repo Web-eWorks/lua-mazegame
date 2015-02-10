@@ -9,8 +9,6 @@ dofile("script/gamefunctions/roomfunctions.lua")
 --  Load the help screen
 dofile("script/gamefunctions/helpscreen.lua")
 
-----
-
 --  Initialize all gameplay values
 function game.init ()
   game.enteredNewRoom = false
@@ -52,6 +50,7 @@ function game.requestTravel (direction)
   
 end
 
+--  Game over, man.
 function game.quit ()
   game.shouldQuit = true
 end

@@ -2,6 +2,7 @@
 
 player = {}
 
+--  Initialize player variables
 function player.init ()
   player.itemBag = {}
 end
@@ -17,6 +18,7 @@ function player.checkItemInBag(itemID)
   return nil
 end
 
+--  Show what is in our inventory
 function player.printInventory ()
   local invS = ""
   

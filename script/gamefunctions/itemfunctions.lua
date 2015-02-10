@@ -1,6 +1,6 @@
 --  Item related functions.  Subset of gamefunctions.lua.
 
---  Load items
+--  Load items from file
 function game.initItems ()
   game.items = {}
   
@@ -21,7 +21,7 @@ function game.getItem ( itemID )
   end
 end
 
---  Print an item's description, or let the item handle the printing.
+--  Print an item's description, or let the item print it.
 function game.printItemDescription ( item )
   if item.descFunc then
     item.descFunc(item)
@@ -31,7 +31,7 @@ function game.printItemDescription ( item )
   print(item.description)
 end
 
---  Check if we know enough about an item to show it's description.
+--  Check if we have an item to show it's description.
 function game.getItemToExamine (itemID)
   local item = game.checkItemInRoom(itemID)
   
@@ -53,6 +53,7 @@ function game.examineItem (itemID)
   game.printItemDescription(item)
 end
 
+--  Take an item from the room
 function game.takeItem (itemID)
   local item = game.removeItemFromRoom(itemID)
   if not item then

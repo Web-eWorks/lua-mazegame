@@ -1,5 +1,5 @@
 --  The help screen.
---  Totally self contained.
+
 function game.showHelpScreen ()
   clear()
   print("Maze Game v0.1\n")

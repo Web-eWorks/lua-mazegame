@@ -14,6 +14,7 @@ function game.initRooms ()
   end
 end
 
+--  Replace the item names with the actual items.
 function game.initRoomItems ( room )
   local entriesToRemove = {}
   for i,v in ipairs(room.items) do
@@ -29,6 +30,7 @@ function game.initRoomItems ( room )
   return game.initChanceItems(room)
 end
 
+--  Load items.  1 in 3 chance to get the item.
 function game.initChanceItems ( room )
   local entriesToRemove = {}
   for i,v in ipairs(room.chanceItems) do
@@ -48,7 +50,7 @@ function game.initChanceItems ( room )
   return room
 end
 
---  Returns an entry in the rooms database.
+--  Return an entry in the rooms database.
 function game.getRoom ( roomID )
   return game.rooms[roomID]
 end
@@ -61,6 +63,7 @@ function game.checkItemInRoom ( itemID )
   return nil
 end
 
+--  Remove an item from the room's database.  Backend to game.takeItem()
 function game.removeItemFromRoom ( itemID )
   local item = game.checkItemInRoom(itemID)
   if not item then
@@ -130,4 +133,4 @@ function game.printRoomDescription ( )
   else
     print("The exits from this room are "..roomExits)
   end
-end
+end  --  This was a monster.
