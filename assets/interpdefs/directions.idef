@@ -1,1 +1,1 @@
-return { "north", "south", "east", "west", }
+return { "north", "n", "south", "s", "east", "e", "west", "w" }
